@@ -11,7 +11,7 @@ def calculate_from_api(op):
         result= response.json()["result"]
         label_result.config(text=f"Result: {result}")
     except Exception as e:
-        label_result.config(f"Error= {e}")
+        label_result.config(text= f"Error= {e}")
 
 root= tk.Tk()
 root.title("Calculator")
