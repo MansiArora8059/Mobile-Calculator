@@ -23,6 +23,7 @@ async def calculate(data: Calculation):
         if b==0:
             raise HTTPException(status_code=400, detail= "wrong operation")
         result= a/b
+
     else:
         raise HTTPException(status_code=400, detail="wrong operation")
 
